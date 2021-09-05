@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+ background-color: #007BDF;
+}
+
+.container {
+  position: fixed;
+  top: 4em;
+  width: 100%;
+  text-align: center;
+ }
+  .content_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+    .content_img img {
+      width: 300px;
+      display: block;
+      animation: animates 2s linear infinite alternate; 
+    }
+  .content_number {
+    position: absolute;
+    font-size: 5.5rem;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 600;
+    top: 9rem;
+    color: rgba(255, 255, 255, 0.5);
+    animation: animatestext 2s linear infinite alternate; 
+  }
+  .content_error {
+    color: #ffffff;
+    width: 50%;
+    margin: 2em auto;
+    font-family: "Gill Sans", sans-serif; 
+  }
+  .content_button {
+    background-color: #2a3b47;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Gill Sans", sans-serif;
+    padding: 1em 2em;
+    border-radius: .5em;
+    text-decoration: none; 
+  }
+  .content_button:hover{
+    background-color: #22303a;
+  }
+@-webkit-keyframes animates {
+  0% {
+    transform: translateX(5%); }
+  100% {
+    transform: translateX(-5%); } }
+
+@keyframes animates {
+  0% {
+    transform: translateX(5%); }
+  100% {
+    transform: translateX(-5%); } }
+
+@-webkit-keyframes animatestext {
+  0% {
+    transform: rotate(5deg); }
+  100% {
+    transform: rotate(-5deg); } }
+
+@keyframes animatestext {
+  0% {
+    transform: rotate(5deg); }
+  100% {
+    transform: rotate(-5deg); } }
